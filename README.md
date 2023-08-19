@@ -1,3 +1,2 @@
 # allanc.me
-Personal Website
-This is my personal Website. This is work-in-progress.
+This is my personal Website. Current build is a work-in-progress, expect fluid webpages soon :).
