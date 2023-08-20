@@ -17,14 +17,19 @@ body {
     font-weight: 1 1000;
 }
 
-.archivo-title {
+.archivo {
     font-family: 'Archivo', sans-serif;
     font-feature-settings: "calt" 1, "rlig" 1, "kern" 1, "rclt" 1, "liga" 1, "onum" 1, "zero" 1, "rvrn" 1;
 }
 
 /* Navigation */
 .navbar {
-    background: #2d2f2c;
+
+    transition: 0.5s;
+}
+.navbar-scrolled {
+    background-color: #758467;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
 }
 
 .nav-link,
@@ -41,7 +46,7 @@ body {
 
 .nav-link:hover {
     color: grey;
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
 
 }
 
@@ -70,8 +75,8 @@ body {
     background-position: center;
     position: relative;
     padding: 15%;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 15%;
+    padding-right: 15%;
     background-image: url('images\\bgimage2.jpg');
 }
 
@@ -84,13 +89,6 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
-/* Header */
-/* .description {
-	left: 50%;
-	position: absolute;
-	top: 45%;
-	text-align: center;
-} */
 .pfp {
     position: flex;
     padding-top: auto;
@@ -111,24 +109,23 @@ body {
 .description h1 {
     color: #f8f8f8;
     font-weight: 700;
-    font-size: 3.1em;
+    font-size: 350%;
 }
 
-.description h4 {
+.description h5 {
     color: #dee1e3;
-    font-weight: 400;
+    font-size: 125%;
 }
 
 .description button {
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0);
-    border-radius: 2;
-    color: #f8f8f8;
-    font-weight: bold;
+    border: 3px solid rgba(117, 132, 103, 0.8);
+    border-radius: 100px;
+    color: #dee1e3;
+    
 }
 
 .description button:hover {
-    border: 1px solid #f8f8f8;
+    border: 3px solid #f8f8f8;
     background: #f8f8f8;
     color: #333333;
 }
@@ -143,7 +140,10 @@ body {
     display: flex;
     align-items: center;
 }
-
+.headingright {
+    display: flex;
+    align-items: center;
+}
 /* 3-grid Features */
 .features {
     margin: 4em auto;
