@@ -1,11 +1,11 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f8f8f8;
+    background: #dbe0d7;
 }
 /* Navigation */
 .navbar {
-    background:#333333;
+    background:#2d2f2c;
 }
 .nav-link,
 .navbar-brand {
@@ -14,12 +14,24 @@ body {
 }
 .nav-link {
     margin-right: 1em !important;
+    margin-left: 1em !important
 }
 .nav-link:hover {
     color: grey;
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+.navbar-nav.ml-auto {
+    display: flex;
+    align-items: center;
+}
+#main-navigation-left {
+    justify-content: flex-end;
+}
+.ac {
+    height: 70px;
+    max-width: 100%;
 }
 /* Landing Image */
 .header {
@@ -29,7 +41,7 @@ body {
     padding: 15%;
     padding-left: 25%;
     padding-right: 25%;
-    background-image: url('images\\bgimage.jpg');
+    background-image: url('images\\bgimage2.jpg');
 }
 .overlay {
     position: absolute;
