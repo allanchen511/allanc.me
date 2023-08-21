@@ -7,11 +7,30 @@
 // })
 
 const navEl = document.querySelector('.navbar');
+let clicked = false;
+const scrollYvalue = 90;
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 90) {
-        navEl.classList.add('navbar-scrolled')
-    } else if (window.scrollY < 90) {
-        navEl.classList.remove('navbar-scrolled')
+    if (!clicked) {
+        if (window.scrollY >= scrollYvalue) {
+            navEl.classList.add('navbar-scrolled')
+        } else if (window.scrollY < scrollYvalue) {
+            navEl.classList.remove('navbar-scrolled')
+        }
     }
+
+});
+
+document.querySelector('.navbar-toggler').addEventListener('click', () => {
+    if (clicked) {
+        clicked= false
+        if (window.scrollY < scrollYvalue) {
+            navEl.classList.remove('navbar-scrolled')
+        }
+    } else {
+        navEl.classList.add('navbar-scrolled')
+        clicked = true
+    }
+
+
 });

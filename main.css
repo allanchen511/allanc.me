@@ -24,11 +24,10 @@ body {
 
 /* Navigation */
 .navbar {
-
     transition: 0.5s;
 }
 .navbar-scrolled {
-    background-color: #758467;
+    background-color: #2d2f2c;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
 }
 
@@ -47,7 +46,11 @@ body {
 .nav-link:hover {
     color: grey;
     transition: all 0.1s ease-out;
+}
 
+.nav-link:active {
+    color: fff;
+    transition: all 0.1s ease-out;
 }
 
 .navbar-collapse {
@@ -69,7 +72,7 @@ body {
     /* border-radius: 25%; */
 }
 
-/* Landing Image */
+/* Landing Page */
 .header {
     background-size: cover;
     background-position: center;
@@ -121,7 +124,7 @@ body {
     border: 3px solid rgba(117, 132, 103, 0.8);
     border-radius: 100px;
     color: #dee1e3;
-    
+    margin: 5px;
 }
 
 .description button:hover {
@@ -144,6 +147,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 /* 3-grid Features */
 .features {
     margin: 4em auto;
@@ -164,4 +168,28 @@ body {
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); */
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     margin-bottom: 16px;
+}
+
+/* Experiences */
+
+.experiences {
+    padding: 10%;
+    background-color: red;
+    width: fit-content
+}
+
+.experience-bullet {
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.experience-details {
+    background-color: aqua;
+}
+
+.experience-image {
+    background-color: orange;
+    object-fit:cover;
+
 }
