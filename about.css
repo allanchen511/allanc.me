@@ -100,6 +100,37 @@ body {
     margin-top: 76px;
 }
 
+.about-image {
+    border-radius: 10px;
+    order: 2;
+
+}
+
+.about-container {
+    padding: 50px;
+    
+}
+
+
+
+.about-header {
+    font-weight: 800;
+    font-size: 300%;
+    color: #3c4236;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-text {
+
+}
+
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin: 10px 0px; /* change this to whatever height you want it */
+}
+
 /* Footer */
 .footer {
     transition: .5s;
