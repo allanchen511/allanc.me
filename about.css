@@ -103,7 +103,7 @@ body {
 .about-image {
     border-radius: 10px;
     order: 2;
-
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .about-container {
@@ -128,7 +128,7 @@ body {
 br {
     display: block; /* makes it have a width */
     content: ""; /* clears default height */
-    margin: 10px 0px; /* change this to whatever height you want it */
+    margin: 20px 0px; /* change this to whatever height you want it */
 }
 
 /* Footer */
