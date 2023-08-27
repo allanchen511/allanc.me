@@ -17,15 +17,32 @@ body {
     font-weight: 1 1000;
 }
 
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/LibreBaskerville-Regular.ttf') format('truetype-variations');
+    font-weight: 1 1000;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Italicize';
+    src: url('fonts/LibreBaskerville-Italic.ttf') format('truetype-variations');
+    font-weight: 1 1000;
+}
+
 .archivo {
     font-family: 'Archivo', sans-serif;
     font-feature-settings: "calt" 1, "rlig" 1, "kern" 1, "rclt" 1, "liga" 1, "onum" 1, "zero" 1, "rvrn" 1;
+}
+
+.libre-baskerville {
+    font-family: 'LibreBaskerville', sans-serif;
 }
 
 /* Navigation */
 .navbar {
     transition: 0.5s;
 }
+
 .navbar-scrolled {
     background-color: #2d2f2c;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
@@ -72,6 +89,10 @@ body {
     /* border-radius: 25%; */
 }
 
+.nav-text {
+    font-weight: 900px !important;
+}
+
 /* Landing Page */
 .header {
     background-size: cover;
@@ -81,9 +102,8 @@ body {
     padding-left: 15%;
     padding-right: 15%;
     background-image: url('images\\bgimage2.jpg');
-    
-}
 
+}
 
 .overlay {
     position: absolute;
@@ -145,6 +165,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .headingright {
     display: flex;
     align-items: center;
@@ -178,10 +199,12 @@ body {
     padding: 10%;
     /* background-color: red; */
 }
+
 /* 758467 */
 .experience-bullet {
     background-color: #758467;
     padding: 25px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 25px;
 }
@@ -192,7 +215,7 @@ body {
 
 .experience-details {
     color: #dfe6da
-    /* background-color: aqua; */
+        /* background-color: aqua; */
 }
 
 .experience-image {
@@ -206,4 +229,26 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 
+}
+
+.experience-header {
+    font-weight: 800;
+    font-size: 250%;
+    color: #3c4236;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-text>* {
+    margin-top: 4px;
+}
+
+.experience-details-text {
+    font-size: 100%
+}
+
+
+/* Footer */
+.footer {
+    transition: .5s;
 }
