@@ -239,16 +239,24 @@ body {
     margin-bottom: 10px;
 }
 
-.experience-text>* {
+.experience-text > * {
     margin-top: 4px;
 }
 
 .experience-details-text {
-    font-size: 100%
+    font-size: 100%;
+}
+
+.experience-details-text > * {
+    margin-bottom: 7px;
 }
 
 
 /* Footer */
 .footer {
     transition: .5s;
+}
+
+.footer-basic {
+    background-color: #758467;
 }
