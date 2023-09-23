@@ -93,32 +93,20 @@ body {
     font-weight: 900px !important;
 }
 
+/* Body */
 
-.header {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 15%;
-    padding-left: 15%;
-    padding-right: 15%;
-    background-image: url('images\\img2.jpg');
-
+.card-deck {
+    display: flex;
+    flex-wrap: wrap; /* Allows the cards to wrap onto a new line */
+    gap: 2rem;
+    justify-content: center; /* Centers the cards horizontally */
+    padding: 20px; /* Adjust padding as needed */
 }
 
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-}
+.container {
+    padding-top: 100px;
+    padding-bottom: 30px;
 
-.construction {
-    color: #ffffff;
-    font-weight: 800px;
-    
 }
 
 /* Footer */
