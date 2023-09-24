@@ -1,7 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    background: #cbd5c0;
+    background: linear-gradient(to bottom, #cbd5c0,  #9eb48d);
+    
     font-family: 'Inter', sans-serif;
 }
 
@@ -108,6 +109,49 @@ body {
     padding-bottom: 30px;
 
 }
+
+.projects-header{
+    font-weight: 800;
+    font-size: 300%;
+    color: #3c4236;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem; /* Add border-radius to match the card */
+    height: 200px; /* Adjust the height to match your desired size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for both the original image and GIF */
+.image-container img,
+.image-container .gif {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+
+/* Style for the GIF overlay */
+.image-container .gif {
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Show the GIF on hover */
+.image-container:hover .gif {
+    opacity: 1;
+}
+
 
 /* Footer */
 .footer {

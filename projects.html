@@ -59,7 +59,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1 class="archivo">Projects</h1>
+                <h1 class="projects-header archivo">Projects</h1>
             </div>
         </div>
 
@@ -75,14 +75,18 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Technologies: Java, JUnit, STDdraw, Princeton libraries</small>
+                        <small class="text-muted">Java, JUnit, STDdraw, Princeton libraries</small>
                     </div>
                 </div>
             </div>
 
             <div class="col d-flex">
                 <div class="card w-100">
-                    <img class="card-img-top" src="images/ants vs somebees.png" alt="Ants vs. Somebees">
+                    <div class="image-container">
+                        <img class="card-img-top original-image" src="images/ants vs somebees.png"
+                            alt="Ants vs. Somebees">
+                        <img class="gif" src="images/ants.gif" alt="GIF">
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title archivo">Ants vs. Somebees</h4>
                         <p class="card-text libre-baskerville">Developed a playable plants vs. zombies spinnoff. Learned
@@ -91,7 +95,7 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Technologies: Python</small>
+                        <small class="text-muted">Python</small>
                     </div>
                 </div>
             </div>
@@ -109,14 +113,17 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Technologies: HTML, CSS, JavaScript</small>
+                        <small class="text-muted">HTML, CSS, JavaScript</small>
                     </div>
                 </div>
             </div>
 
             <div class="col d-flex">
                 <div class="card w-100">
-                    <img class="card-img-top" src="images/ngordnet.gif" alt="Ngordnet">
+                    <div class="image-container">
+                        <img class="card-img-top original-image" src="images/wordnet.png" alt="NGordnet">
+                        <img class="gif" src="images/ngordnet.gif" alt="GIF">
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title archivo">NGordnet</h4>
                         <p class="card-text libre-baskerville">Designed backend API's for a web tool that mimicks the
@@ -125,10 +132,30 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Technologies: Java, JUnit</small>
+                        <small class="text-muted">Java, JUnit</small>
                     </div>
                 </div>
             </div>
+
+            <div class="col d-flex">
+                <div class="card w-100">
+                    <img class="card-img-top" src="images/soundwaves.jpg" alt="MP3 Audio Classifier">
+                    <div class="card-body">
+                        <h4 class="card-title archivo">MP3 Audio Classifier</h4>
+                        <p class="card-text libre-baskerville">
+                            Built an mp3 audio classifier to classify sad and happy songs through K-Nearest Neighbors
+                            and Support Vector Machines. Achieved a classification accuracy of over 90%.
+
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Python, Tensorflow, SciKit Learn, Librosa</small>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 
@@ -166,6 +193,7 @@
 
 
 <!-- <script src="main.js"></script> -->
+<script src="projects.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
