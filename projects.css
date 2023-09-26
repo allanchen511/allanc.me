@@ -152,6 +152,10 @@ body {
     opacity: 1;
 }
 
+.card-footer-css {
+    background-color: #f3f7ee;
+}
+
 
 /* Footer */
 .footer {
