@@ -1,7 +1,13 @@
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }
+
 body {
     padding: 0;
     margin: 0;
-    background: #cbd5c0;
+    background: #f6f6f5;
     font-family: 'Inter', sans-serif;
 }
 
@@ -29,6 +35,12 @@ body {
     font-weight: 1 1000;
 }
 
+@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    src: url('fonts/LibreBaskerville-Bold.ttf') format('truetype-variations');
+    font-weight: 1 1000;
+}
+
 .archivo {
     font-family: 'Archivo', sans-serif;
     font-feature-settings: "calt" 1, "rlig" 1, "kern" 1, "rclt" 1, "liga" 1, "onum" 1, "zero" 1, "rvrn" 1;
@@ -38,13 +50,21 @@ body {
     font-family: 'LibreBaskerville', sans-serif;
 }
 
+.libre-baskerville-bold {
+    font-family: 'LibreBaskerville-Bold', sans-serif;
+}
+
+.accent-color { 
+    color: #F46036;
+}
+
 /* Navigation */
 .navbar {
     transition: 0.5s;
 }
 
 .navbar-scrolled {
-    background-color: #2d2f2c;
+    background-color: #2B3B2D;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
 }
 
@@ -55,18 +75,38 @@ body {
 }
 
 .nav-link {
-    margin-right: 1em !important;
-    margin-left: 1em !important;
+    padding-right: 1em !important;
+    padding-left: 1em !important;
     font-size: 1.1em;
+    will-change: transform;
+    transition: transform 125ms;
+    
 }
 
+.nav-item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 .nav-link:hover {
-    color: grey;
+    color: white;
     transition: all 0.1s ease-out;
 }
 
+.navbar-nav .nav-item {
+    border: 3px solid transparent; /* Set a transparent border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Add a transition for border-color property */
+    will-change: transform;
+    transition: transform 250ms;
+}
+.navbar-nav .nav-item:hover {
+    border-color: #F46036; /* Set the desired border color on hover */
+    transition: transform 125ms;  
+    transform: translateY(-2.5px);
+}
+
 .nav-link:active {
-    color: fff;
+    color: #BB4430;
     transition: all 0.1s ease-out;
 }
 
@@ -103,7 +143,7 @@ body {
 .about-image {
     border-radius: 10px;
     order: 2;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); */
 }
 
 .about-container {
@@ -116,13 +156,17 @@ body {
 .about-header {
     font-weight: 800;
     font-size: 300%;
-    color: #3c4236;
+    color: #292D26;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.about-text {
+.about-container {
+    color: #292D26;
+}
 
+.about-text {
+    color: #292D26
 }
 
 br {
@@ -137,5 +181,15 @@ br {
 }
 
 .footer-basic {
-    background-color: #758467;
+    background-color: #2B3B2D;
+    
+}
+
+.footer-text {
+    color: #BAC1BA;    
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    color: #BB4430
 }
