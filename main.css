@@ -193,7 +193,7 @@ body {
 }
 
 .description a {
-    border: 3px solid rgba(117, 132, 103, 0.8);
+    border: 3px solid rgba(159, 179, 140, 1);
     border-radius: 100px;
     color: #dee1e3;
     margin: 5px;
@@ -265,7 +265,6 @@ body {
 /* 758467 */
 .experience-bullet {
     background-color: #EAEAE8;
-    /* #758467; */
     padding: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -279,7 +278,7 @@ body {
 
 .experience-details {
     color: #2B3B2D;
-        /* background-color: aqua; */
+    /* background-color: aqua; */
 }
 
 .experience-image {
